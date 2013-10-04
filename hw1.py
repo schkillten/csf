@@ -8,7 +8,7 @@
 import math
 import sys
 
-#problem 1 of the homework solving the quadractic
+#problem 1 of the homework solving the quadratic
 #this is for the subtraction half of the quadratic general solution
 def quad_minus(a,b,c):
 	root =(-b - math.sqrt((b**2) + (-4*a*c))) / (2*a)
