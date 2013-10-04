@@ -47,4 +47,3 @@ print "The answer for part 3: ", answer
 
 #this took about an hour to get working at this point. I am familiar to python syntax which was useful
 #but the readings and lectures i feel did have the information required to complete this program
-#unless someone was not familiar with solving quadratic equations
