@@ -38,7 +38,7 @@ root = quad_plus(a,b,c)
 print "This is root #2: %s." % (root)
 print "The  \"tpye\" of root #2 is: ", type(root)
 #problem 2 of homework importing the mod with values a-f
-from hw1 import *
+from hw1_test import *
 
  #problem 3 of homework solving the equation using values from hw1
 answer = ((a and b) or (not c) and not (d or e or f))
