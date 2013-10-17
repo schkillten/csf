@@ -5,3 +5,8 @@ import Lab2
 
 for i in range(n):
     print "Hello World"
+    
+# Comments from instructor: Paul Pham [10/16/2013]
+# Good job! This is exactly right.
+# Except that I meant for lab2 to be all lowercase,
+# but no matter :]
