@@ -1,7 +1,7 @@
 # Grader Name: Jessica Morton
 # Evergreen Login: morjes14
 
-import Lab2
+import lab2
 
 for i in range(n):
     print "Hello World"
