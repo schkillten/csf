@@ -25,7 +25,7 @@ def gauss(gauss_prob):
 ## This is the function used to solve problem 2
 
 
-#this function takes a number say 10 and prints each 
+#this function takes a number and prints the reciprocals 
 def recip(recip_range):
 
 	for i in range(1,recip_range):
@@ -82,7 +82,8 @@ def sumrecipfact(total_range):
 	return sumtot
 
 
-## This is the statisfy the import part of the first problem and to solve for n, however the next part of the program labeled problem 1 takes user input to solve for any n for the same problem.
+## This is the statisfy the import part of the first problem and to solve for n, however the next part of the program 
+## labeled problem 1 takes user input to solve for any n for the same problem.
 from hw2_test import n
 
 hw2_test = gauss(n)
