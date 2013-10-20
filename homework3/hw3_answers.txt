@@ -40,4 +40,4 @@ No one :(
 
 Reflection:
 
-Well this assignment reinforced the idea of how powerful being able to read other source codes can be and the simplicity it brings to making modifications for your own use. My suggestion to future students, well i wouldn't recommend making a habbit of this but, you may not always need to understand what the soul purpose of the code is, such as a dna analysis or what the nucleotides are, because in this case for problem 4 it was simply asking to do the same thing for AT content as GC content, if you understand how it is getting the output for the GC content then you just modify it for AT content, in the end it is the same code searching for different results. I have zero experience with DNA analysis (not that I am not open to learning it) but i did not need to know anything about it to complete this assignment.
+This assignemnt enforced how important it can be to be able to read the source code and how useful that could be when it comes to making modifications to a code for your own use.
