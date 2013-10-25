@@ -1,0 +1,46 @@
+Name: Kyle Schaefer
+Evergreen Login: schkyl10
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 3 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+
+Problem 5:
+
+Total G-Count: 5738773
+Total C-Count: 5879128
+Total A-Count: 7701287
+Total T-Count: 7661547
+
+Problem 6:
+
+The total in each test-high-1/2 and test-moderate-1/2 the total sum of at/gc is always different from the total count and seq length, since in these files there exists a character "N", the "N" is counted in the total count and the length sums since it is apart of whats being read but it is not apart of any of our if statements searching for only A T G or C. The sum of ATGC is only searching for those 4 characters not anything else.
+
+
+
+
+Problem 7:
+
+AT/GC Ratio: 1.32234161747
+
+
+Problem 8:
+
+GC Classification: Moderate
+
+Collaboration:
+
+No one :(
+
+Reflection:
+
+
