@@ -1,0 +1,44 @@
+Name: Kyle Schaefer
+Evergreen Login: schkyl10
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 3 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+
+GC-content: 0.43029262963
+
+
+Problem 3:
+
+The first issue when commenting out the two sections of code causes a not defined error since the variable "linenum" is being used before its defined "linenum = <linenum> + 1" being used as if has a value.
+If you were to comment out "gc_count = 0" in this case you would get the same result since again, you are trying to use a variable that has no value, that is not assigned anything and add it to an int.
+
+Problem 4:
+
+GC-Content: 0.43029262963
+AT-Content: 0.568993851852
+
+
+
+Collaboration:
+
+No one :(
+
+Reflection:
+
+Learned how useful it is to be able to read other source codes so they can be modified for other uses.
+
