@@ -107,7 +107,7 @@ if percentp2 > 60.0:
 
 	classif = "High"
 
-elif percentp2 <= 40.0:
+elif percentp2 < 40.0:
 	
 	classif ="Low"
 else:
