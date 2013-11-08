@@ -43,14 +43,18 @@ def state_edges(election_result_rows):
     # This is giving me the length of elements in the list so we know how many times to loop through 
     length = len(election_result_rows)    
 
+    # The for loop is used to go throgh each item in the list (or rows in this case)
+    for i in range(length):
 
-    for i in range(length): 
+	# initializes the first element and is increased by 1 
 	result = election_result_rows[x]
-
+	# this is the variable i am using to call the function to get the edge
 	total = row_to_edge(result)
+	# this is where the result is actually adding the information into the answer dictionary
 	answer[result["State"]] = total
+	# this x is what increases the result variable
 	x += 1
-
+    # Result is printed and returned
     print answer
     return answer 
         
