@@ -72,6 +72,7 @@ def most_recent_poll_row(poll_rows, pollster, state):
     print len(pollster)
     print len(state)
     """
+    #random stuff i was testing but didnt get to complete
    
     """ 
     print
