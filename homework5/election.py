@@ -39,10 +39,11 @@ def state_edges(election_result_rows):
     answer = {}
     # The for loop is used to go throgh each item in the list (or rows in this case)
     for i in range(len(election_result_rows)):	
+    	#is running the row_to_edge function on all elements in election_result_rows then saved into answer dictionary
 	total = row_to_edge(election_result_rows[i])
-	# this is where the result is actually adding the information into the answer dictionary
+	# here is where information is being added into the answer dictionary
 	answer[election_result_rows[i]["State"]] = total
-	# this i is what increases the result variable
+	# this i is what increases the index in election_result_rows
 	i += 1
     # Result is returned
     return answer 
