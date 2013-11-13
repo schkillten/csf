@@ -2,7 +2,7 @@
 # Evergreen Login: schkyl10
 # Programming as a Way of Life
 # Homework 5: Election prediction
-
+import string
 import csv
 import os
 import time
@@ -35,27 +35,16 @@ def state_edges(election_result_rows):
     The input list does has no duplicate states;
     that is, each state is represented at most once in the input list.
     """
-
-    # The x is being used as the index variable and is increased each time the loop is executed
-    x = 0
     # This is initializing an empty dic so I can add to it in the loop 
     answer = {}
-    # This is giving me the length of elements in the list so we know how many times to loop through 
-    length = len(election_result_rows)    
-
     # The for loop is used to go throgh each item in the list (or rows in this case)
-    for i in range(length):
-
-	# initializes the first element and is increased by 1 
-	result = election_result_rows[x]
-	# this is the variable i am using to call the function to get the edge
-	total = row_to_edge(result)
+    for i in range(len(election_result_rows)):	
+	total = row_to_edge(election_result_rows[i])
 	# this is where the result is actually adding the information into the answer dictionary
-	answer[result["State"]] = total
-	# this x is what increases the result variable
-	x += 1
-    # Result is printed and returned
-    print answer
+	answer[election_result_rows[i]["State"]] = total
+	# this i is what increases the result variable
+	i += 1
+    # Result is returned
     return answer 
         
 ################################################################################
@@ -74,8 +63,56 @@ def most_recent_poll_row(poll_rows, pollster, state):
     Given a list of poll data rows, returns the most recent row with the
     specified pollster and state. If no such row exists, returns None.
     """
-    #TODO: Implement this function
-    pass
+    """
+    # Print statements to test what the input/output is for each arg
+    print "POll", poll_rows
+    print "Pollster", pollster
+    print "STATE", state
+
+    print len(poll_rows)
+    print len(pollster)
+    print len(state)
+    """
+   
+    """ 
+    print
+    
+    x = 0
+    y = 1 
+    d1 = earlier_date(poll_rows[x]["Date"], poll_rows[y]["Date"])
+   
+    """
+ 
+    for i in poll_rows:
+	datePoll = i["Date"]
+	print datePoll
+
+        if i["Pollster"] == pollster and i["State"] == state:
+		print "Its working"
+		
+
+
+		
+	else:
+		print "Not working"
+    """ 
+    # testing out results on the rest of the lines
+    x = 0
+
+    y = 1
+
+    
+    if d1 == True:
+	print "Dis True"
+	print poll_rows[x]
+	answer[
+    elif d1 == False:
+	print "Dis False"
+	return poll_rows[y]
+    else:
+	print "NONE"
+    """ 
+
 
 
 ################################################################################
