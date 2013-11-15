@@ -41,8 +41,6 @@ def state_edges(election_result_rows):
     for i in range(len(election_result_rows)):	
 	# here is where information is being added into the answer dictionary
 	answer[election_result_rows[i]["State"]] = row_to_edge(election_result_rows[i])
-	# this i is what increases the index in election_result_rows
-	i += 1
     # Result is returned
     return answer 
         
@@ -72,6 +70,7 @@ def most_recent_poll_row(poll_rows, pollster, state):
     print len(pollster)
     print len(state)
     """
+    #random stuff i was testing but didnt get to complete
    
     """ 
     print
