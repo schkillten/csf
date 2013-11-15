@@ -1,3 +1,8 @@
+# Name: Kyle Schaefer, Ahmed Ali
+# Username: schkyl10 , aliahm18
+# Homework 6 (tutorial program)
+
+
 """
     
 	Five Key Concepts for being able to complete problem 1 from homework 5
