@@ -1,0 +1,71 @@
+Programming as a Way of Life
+Homework 6 Problems
+Group 7
+Cardin Nguyen
+Travis Wagner
+
+Problem 3 (What is Assert doing?)
+In your homework file, define a = 5 and b = 5.
+Then add “assert a == b”
+
+What is the code giving you?
+
+Now change b = 10
+
+What is the code giving you?
+
+What exactly is assert verifying in this step?
+
+Problem 4 (Defining a function and calling a function)
+Add C = 2 to the list of variables to problem 1.
+Create a function that gives the sum of “X” and “Y” then divided it by Z
+
+Call the function by
+
+print dv(a, b, c) to give the result of (a*b)/c
+
+
+
+
+Problem 5 (What is the differences of Tuples, Lists, Dictionaries)
+
+Create a Tuples list with 4 child name
+reminder: tuples uses ()
+Notes:
+* Tuples are not immutable therefore you cannot change the values once its set.
+Create a Lists with 4 child ages
+
+Notes:
+reminder: list uses []
+to add to a list we use .append(‘value’) to add to a list
+to delete a list we use: del name[index]
+Create a Dictionary list with mother phone number
+Notes:
+reminder: dictionary use {}
+to add to dictionary we use name[‘associate’] = value
+to delete we use: del name[‘associate’]
+
+
+Problem 6 (Creating nested list and accessing lists)
+Create list_a and list_b with even same amount of variables in there. Make a new list_c with the sum of list_a and list_b indexes.
+
+
+Problem 7 (for loop)
+A for loop iterates over the items of any list or string in the order they appear in the sequence but you cannot directly specify
+the number of iterations to make, a halting condition, or the size of the iteration step.
+
+
+for example
+for variable in 'first':
+    print 'Current Letter:'
+    
+it will look like this
+Current Letter : f
+Current Letter : i
+Current Letter : r
+Current Letter : s
+Current Letter : t
+
+With the list ['apple', 'orange', 'pear'] print the current fruit.
+
+
