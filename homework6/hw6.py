@@ -254,13 +254,13 @@ while leave == "n":
 		print "Look at the examples if you're having a hard time remember how to make the structure."
 		user_nest = raw_input("Try again: ")
 
-move_on = raw_input("Press enter to move on: ")
+move_on = raw_input("\nPress enter to move on: ")
 
 
 
 
 
-print "Alright so now you can make a nested data structure for our purpose."
+print "\nAlright so now you can make a nested data structure for our purpose."
 print "Next we want to understand for loops and how useful they can be with lists and dictionaries."
 
 print "\nFirst we will look at a simple for loop: "
@@ -279,7 +279,7 @@ print "    <do code until loop is over> "
 
 move_on = raw_input("\nPress enter to move on: ")
 
-print "An example of another tpye would be:"
+print "\nAn example of another type would be:"
 print 'for i in "Sequence": '
 print "    print i "
 print "\nShould return: "
@@ -320,7 +320,7 @@ nest_list = [dict1, dict2]
 move_on = raw_input("Press enter to move on:")
 
 
-print "Now we can go through a nested data structure using the nested structure we made earlier named nest_list, like so: "
+print "\nNow we can go through a nested data structure using the nested structure we made earlier named nest_list, like so: "
 print "for i in nest_list:"
 print "    print i"
 
@@ -384,6 +384,8 @@ while leave == "n":
 		print "Incorrect!"
 		print "Look at the example above to help with the format."
 		loop_scope = raw_input("Try again: ")
+
+move_on = raw_input("Press enter to move on: ")
 
 print "\nAwesome! Now we will run the same loop but we will use a function inside of the loop to tell us which store has the lowest prices."
 
@@ -483,7 +485,7 @@ leave = "n"
 
 while leave == "n":
 
-	if add_to_list == "empty_list.append(sqrt(i))":
+	if add_to_list == "empty_list.append(square(i))":
 
 		print "Correct!"
 
@@ -499,5 +501,5 @@ while leave == "n":
 
 print "Waaaahooooooo look behind you!"
 
-
+move_on = raw_input("Press enter to move on: ")
 print "\nJust kidding you're done...."
