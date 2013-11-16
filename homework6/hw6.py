@@ -11,36 +11,7 @@
     	4. For loops
     	5. Calling functions/within loops and their uses.
 """
-"""
 
-
-dictionary = {}
-dictionary["Kyle"] = 10
-dictionary["Ahmed"] = 5
-# Problem 1 (Dictionaries and lists)
-# Difference between lists and dictionaries
-# A dictionary is noted with {} similar to a set, however an example of a dictionary would have a ":" inside of the brackets
-# the reason for this is because a dictionary has keys and values, such as,
-print "This is an example of a dictionary."
-
-print dictionary
-part1 = raw_input("You go ahead and create your own dictionary: ")
-print part1
-print "This is the name of the dictionary and the contents within it:", 'dictionary = {"Kyle" : 10, "Ahmed" : 5}'
-
-# This dictionary shows everyones favorite number.
-# The term Kyle is the first key listed in this dictionary (dictionaries order does not matter) and would yield the value of 10 if the key "Kyle" was called.
-# If the key "Ahmed" was called it would yield the value of 5
-print "Example of how to call a key in a dictionary: dictionary[\"Kyle\"]"
-print "Would return: ", dictionary["Kyle"]
-print "Another example: dicionary[\"Ahmed\"]"
-print "Would return: ", dictionary["Ahmed"]
-# The next concept to understand with dictionaries is how to add another key and value to the dictionary.
-print "An example of adding contents to a dictionary would look like this: dictionary[\"Ian\"] = 14"
-dictionary["Ian"] = 14
-print "To see the new content in the dictionary, you would simply type the name of the dictionary: dictionary"
-print "Would return: ", dictionary
-"""
 
 print "First concept we will introduce is dictionaries." 
 print "Here is an example of the contents in a dictionary: "
