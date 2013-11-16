@@ -4,14 +4,12 @@
 
 
 """
-    
-	Five Key Concepts for being able to complete problem 1 from homework 5
-	1. Understanding dictionaries and being able to use the keys and the benefits of using them
-	2. Understanding For loops.
-	3. Understanding calling and defining functions.	
-	4. Understanding the scopes like when to indent and unindent
-	5. Understanding Indexing and the difference with indexing on dictionaries and lists
-	note: not in this order
+    	The five key concepts:
+    	1. Dictionaries
+    	2. Lists
+    	3. Indexing lists/dictionaries
+    	4. For loops
+    	5. Calling functions/within loops and their uses.
 """
 """
 
