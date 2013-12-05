@@ -3,17 +3,11 @@ import matplotlib.pyplot as plt
 
 practice_graph = nx.Graph()
 
-
-
-
 practice_graph.add_nodes_from("ABCDEF")
 
-#practice_graph.add_edges_from([("D", "E"), ("D", "B"), ("D", "
 D = "EBCF"
 A = "BC"
 C = "BF"
-
-
 
 for a in A:
 	practice_graph.add_edge("A", a)
@@ -56,13 +50,6 @@ for j in J:
 
 nx.draw(rj)
 plt.show()
-
-
-
-
-	
-
-
 """
 practice_graph.add_nodes_from("ABCDEF")
 practice_graph.add_edge("E", "D")
@@ -74,13 +61,7 @@ practice_graph.add_edge("C", "B")
 practice_graph.add_edge("C", "A")
 practice_graph.add_edge("A", "B")
 
-
-
-
-
-
 #practice_graph.add_edge
-
 
 #practice_graph.add_edges_from([("a","b"), ("c","d")])
 #practice_graph.add_edges_from([("abcdef", "f"), ("abcdef", "e")])
@@ -91,4 +72,3 @@ for i in test:
 	practice_graph.add_edge("abcdef", i)
 #practice_graph.add_edges_from
 """
-
