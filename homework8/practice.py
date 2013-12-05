@@ -37,6 +37,8 @@ R = ["Friar Laurence", "Benvolio", "Montague", "Mercutio"]
 C = ["Tybalt", "Paris", "Escalus"]
 E = ["Paris", "Mercutio", "Montague"]
 
+
+#got lazy when adding edges
 rj.add_edge("Paris", "Mercutio")
 rj.add_edge("Montague", "Benvolio")
 
