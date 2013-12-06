@@ -2,6 +2,16 @@ import visual as v
 import random
 import sys
 
+
+#######
+
+# Need to have Vpython installed 
+
+
+#######
+
+
+# Function to make a random color out of the specified colors
 def makeRandomColors(lst):
 	return lst[random.randrange(len(lst))]
 
@@ -31,7 +41,9 @@ while 1:
 	sph.pos = sph.pos + sph.velocity*dt	
 	print sph.pos.x	
 
-
+	
+	# Somewhat of a timer/counter, every 25 iterations throught eh while loop
+	# the colors are changed on the sphere and floor piece, then the counter is reset
 	if count == 25:
 		sph.color = makeRandomColors(colors)
 		floor.color = makeRandomColors(colors)
@@ -40,16 +52,20 @@ while 1:
 
 
 
-	if sph.y < sph.radius:
-	
+
+	if sph.y < sph.radius:	
 		sph.velocity.y = abs(sph.velocity.y)
+
 
 	else:
 		sph.velocity.y = sph.velocity.y - 9.8*dt
-	
+
+
+	# Testing if the x axis for the sphere is exceeding the length of the floor
 	if sph.pos.x > floor.length/float(2):
 		sph.velocity.x = -0.5
 
+	# Testing for the x axis on the sphere but in the opposite direction
 	elif sph.pos.x < floor.length/float(-2):
 		sys.exit(0)
 
