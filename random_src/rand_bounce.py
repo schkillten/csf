@@ -23,7 +23,7 @@ z = 0
 
 colors = [v.color.red, v.color.blue, v.color.yellow, v.color.cyan, v.color.orange, v.color.white, v.color.green, v.color.magenta]
 
-floor = v.box(pos=(0,0,0), length = 5, height = 0.5, width = 5, color = makeRandomColors(colors)) 
+floor = v.box(pos=(0,0,0), length = 15, height = 0.5, width = 5, color = makeRandomColors(colors)) 
 
 print floor.length
 
@@ -34,8 +34,10 @@ dt = 0.01
 count = 0
 
 while 1:
-
-	v.rate(100)
+	
+		
+	v.rate(400)
+	# Checks if the sphere y axis is < the sph radius
 	count += 1
 	
 	sph.pos = sph.pos + sph.velocity*dt	
@@ -61,11 +63,11 @@ while 1:
 		sph.velocity.y = sph.velocity.y - 9.8*dt
 
 
-	# Testing if the x axis for the sphere is exceeding the length of the floor
+
 	if sph.pos.x > floor.length/float(2):
 		sph.velocity.x = -0.5
 
-	# Testing for the x axis on the sphere but in the opposite direction
+
 	elif sph.pos.x < floor.length/float(-2):
 		sys.exit(0)
 
