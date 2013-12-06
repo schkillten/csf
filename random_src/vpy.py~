@@ -1,0 +1,19 @@
+import visual as v
+
+
+floor = v.box(pos=(0,0,0), length = 4, height= 0.5, width = 4, color = v.color.blue)
+
+cyl = v.sphere(pos=(0,4,0), radius = 1, color = v.color.red)
+cly.velocity = v.vector(0,-1,0)
+dt = 0.01
+
+
+while 1:
+
+	v.rate (100)
+	cly.pos = cyl.pos + cyl.velocity*dt
+	if cyl.y < cyl.radius:
+		cyl.velocity.y = abs(cyl.velocity.y)
+
+	else:
+		cyl.velocity.y = cyl.velocity.y - 9.8*dt

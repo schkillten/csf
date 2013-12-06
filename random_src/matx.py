@@ -61,7 +61,7 @@ plot.show()
 """
 
 ng = nx.Graph()
-gn = nx.Graph()
+
 
 alph_low = "abcdefghijklmnopqrstuvwxyz"
 alph_up = alph_low.upper()
@@ -77,6 +77,6 @@ for i in range(len(alph_low)):
 print ng.number_of_nodes()
 print ng.number_of_edges()
 
-nx.draw(ng)
+nx.draw_circular(ng)
 plot.show()
 
