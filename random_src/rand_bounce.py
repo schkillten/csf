@@ -55,6 +55,4 @@ while 1:
 
 
 	else:
-		print "no"
-		
-		
+		print "test cond"
