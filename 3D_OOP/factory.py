@@ -44,5 +44,3 @@ def make_rand_ball(size, position):
 def make_rand_color(colors):
 	pass
 
-
-

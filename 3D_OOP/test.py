@@ -1,18 +1,14 @@
 import random as r
-from visual import *
-
-sph = sphere(pos=(0,0,0), radius = 1, color = color.red)
-bx = box(pos=(0,5,0), width = 3, height = 3, length = 3, color = color.blue)
+import visual as v
+import math
 
 
+#square = v.curve(pos=[(0,0),(0,1),(1,1),(1,0),(0,0)])
 
-def makeColor(test):
+#v.curve(pos=[(0,0,0), (1,0,0), (2,1,0)], radius=0.05)
 
-	return test[r.randrange(len(test)-1)]
+#v.curve( x=v.arange(100), y=v.arange(100)**0.5,
+       #color=v.color.red)
 
-
-
-for i in range(5):
-	print "Pre",sph.color
-	sph.color = sph.color[0] + 0.5
-	print "After", sph.color
+#const = v.sphere(pos=(5,5,5), radius = 1)
+test = v.curve(pos=[(],radius=0.5)

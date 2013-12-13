@@ -21,7 +21,16 @@ floor = fact.make_floor(0,0,0,4,1,0.5)
 def make_rand_color(lst):
 	return lst[random.randrange(len(lst))]
 
-constant = fact.make_sphere(-200, 50, 0, 2)
+
+xx = -50
+yy = 50
+
+
+
+constant = fact.make_sphere(-50, 50, 0, 5)
+
+	
+
 
 
 
@@ -30,10 +39,11 @@ count = 0
 while 1:
 	count += 1
 	
-	fact.control_rate(25)
+	fact.control_rate(20)
 	ball = fact.make_rand_ball(15, 100)
 	ball.color = v.color.red
 	ball2 = fact.make_rand_ball(15, -100)
+
 	ball2.color = make_rand_color(colors)
 	ball.color = make_rand_color(colors)
 	#ball3 = fact.make_rand_ball(15, 
