@@ -37,10 +37,6 @@ def decimalToBinary(decimal):
   if size != 8:
     sub = 8 - size
     binary += "".join("0" * sub)
-
-  #return binary
-  #FIXME Somewhere in cellular_automata.py using this functon gives issues when its reversed at the end
-  # But now the binary number is backards if we don't reverse it
   return binary[::-1]
 
 def resetScreen():
