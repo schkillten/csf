@@ -6,15 +6,15 @@ class CellularAutomata(object):
 
   def __init__(self, rule):
     self.rule = decimalToBinary(rule)
-    self.generation_list = [[]]
+    self.generation_list = []
 
     # FIXME Simple first gen init. Make a function to generate a random 1 gen
-    #self.generation_list.append(['0'] * self.LIST_SIZE)
-    #self.generation_list[0][self.LIST_SIZE/2] = "1"
+    self.generation_list.append(['0'] * self.LIST_SIZE)
+    self.generation_list[0][self.LIST_SIZE/2] = "1"
 
-    for i in range(self.LIST_SIZE):
-      rand = random.randint(0,1)
-      self.generation_list[0].append(str(rand))
+ #   for i in range(self.LIST_SIZE):
+ #     rand = random.randint(0,1)
+ #     self.generation_list[0].append(str(rand))
 
   def generateNext(self):
     prv_index = len(self.generation_list) - 1
@@ -27,6 +27,16 @@ class CellularAutomata(object):
       next_generation.append(new_cell)
 
     self.generation_list.append(next_generation)
+
+  def __flipBits(self, neighbors):
+    flipped_neighbors = ""
+    for i in neighbors:
+      if i == "0":
+        flipped_neighbors += "1"
+      else:
+	flipped_neighbors += "0"
+
+    return flipped_neighbors
 
   def __getNeighbors(self, current_cell, last_generation):
     neighbors = ""
@@ -43,7 +53,9 @@ class CellularAutomata(object):
       neighbors += (current_generation[current_cell + 1])
     else:
       neighbors += "0"
-    return neighbors
+    return  self.__flipBits(neighbors)
 
   def getAllGenerations(self):
     return self.generation_list
+
+

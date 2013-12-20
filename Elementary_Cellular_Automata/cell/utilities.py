@@ -38,8 +38,10 @@ def decimalToBinary(decimal):
     sub = 8 - size
     binary += "".join("0" * sub)
 
-  return binary
-  #return binary[::-1]
+  #return binary
+  #FIXME Somewhere in cellular_automata.py using this functon gives issues when its reversed at the end
+  # But now the binary number is backards if we don't reverse it
+  return binary[::-1]
 
 def resetScreen():
   sys.stdout.write('\033[2J')
@@ -70,3 +72,6 @@ def getValidRuleFromUser():
         printError()
 
   return rule_input
+
+
+
