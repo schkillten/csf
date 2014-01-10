@@ -112,6 +112,12 @@ def main():
 	# infinite loop to keep making new generations
 
 	while True:
+
+		# Added this in just to mess around more with events
+		# Its not working and I am assuming its due to me drawing multiple screens
+		# so the new screen is just canceled out by the newGrid function
+		# that creats a new screen with the updated generation
+		# Am keeping it in here in hopes that i eventually fix the multiply screens issue
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
 				sys.exit(0)
