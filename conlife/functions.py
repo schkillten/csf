@@ -136,6 +136,8 @@ def checkRule(grid):
 # The pygame library has x left/right and y up/down (different then how i store my points )
 # so i swapped the l and h otherwise the shape would be sideways
 # the file name is taken in just to change the caption at the top of the window
+# I'm not sure why I named this function newGrid when it has nothing to do with it
+# But basically it is what generates the Graphical part using pygame
 def newGrid(x,y,width,height,grid, file_name):
 
 	window = pygame.display.set_mode((1920,1080))
