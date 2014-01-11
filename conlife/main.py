@@ -95,7 +95,7 @@ def main():
 	#Controls the sizie of the grid
 	# the larger the grid, the slower the game runs, I believe its because the way i check the points
 	# I am checking every single cell every single time through when the grid is displayed
-	grid = makeGrid(100)
+	grid = makeGrid(75)
 
 	# Lets you pick from a list of text files I've made or you can save one and run it also
 	#print "Text file name:"

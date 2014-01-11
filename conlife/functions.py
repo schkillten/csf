@@ -1,6 +1,5 @@
 import pygame, buttons
 
-
 # This is the functin that gives the initial state of the grid
 # I got tired of manually changing each point in the grid for the inital state
 # So now I can just save a file in the text_files/ directory
@@ -68,6 +67,7 @@ def printGrid(grid):
 # function, as an (x,y) position, then it checks each 8 neighbors, and
 # adds it into the total, that total is what determines what the rule
 # that we need to use is.
+
 def neighborsCount(grid, x, y):
 
 	#print "start"
@@ -79,6 +79,8 @@ def neighborsCount(grid, x, y):
 	y_check = [0, 0, 1, -1, 1, -1, 1, -1]
 
 	for i in range(8):
+		# Thiese checks are the edge cases for when the neighbors are outside of the grid
+		# it is just assumed to be zero
 		if (x + x_check[i]) < 0:
 			total += 0
 		elif (x + x_check[i]) > size:
@@ -107,17 +109,22 @@ def checkRule(grid):
 		for y in range(size):
 			value = int(grid[x][y])
 			total_neighbors = neighborsCount(grid, x , y)
+			# first checks if the cells are living
 			if grid[x][y] == "1":
+				# checks if its under populated
 				if total_neighbors < 2:
 					dead_cells.append((x,y))
 					#print "Under population: (%d, %d)" % (x,y)
+				# checks if its over populated
 				elif total_neighbors > 3:
 					dead_cells.append((x,y))
 					#print "Over population: (%d, %d)" % (x,y)
+				# checks if it is between 2 or 3 to keep alive
 				else:
 					live_cells.append((x,y))
 					#print "Just right population: (%d, %d)" % (x,y)
 			else:
+				# checks to see if the cell is dead and needs to be turned to a living cell
 				if total_neighbors == 3:
 					live_cells.append((x,y))
 					#print "Cell reproduction: (%d, %d)" % (x,y)
